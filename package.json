@@ -1,0 +1,19 @@
+{
+  "name": "@deck/gui",
+  "version": "1.0.1",
+  "main": "index.js",
+  "nw": "0.12.1",
+  "scripts": {
+    "postinstall": "install-nw"
+  },
+  "bin": {
+    "gui": "./cmd.js"
+  },
+  "author": "David Mark Clements",
+  "license": "MIT",
+  "dependencies": {
+    "install-nw": "^1.1.4",
+    "minimist": "^1.1.1",
+    "win-spawn": "^2.0.0"
+  }
+}
