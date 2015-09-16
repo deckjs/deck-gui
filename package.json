@@ -12,6 +12,7 @@
   "author": "David Mark Clements",
   "license": "MIT",
   "dependencies": {
+    "@deck/gui-app": "0.0.1",
     "install-nw": "^1.1.4",
     "minimist": "^1.1.1",
     "win-spawn": "^2.0.0"
