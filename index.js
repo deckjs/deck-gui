@@ -1,9 +1,8 @@
-'use strict';
+'use strict'
 
-var path = require('path');
-var spawn = require('win-spawn');
-var nw = require('nw').findpath();
-var app =  path.join(__dirname, 'nw-app');
+var path = require('path')
+var spawn = require('win-spawn')
+var nw = require('nw').findpath()
 
 module.exports = function (url) {
   var stream = spawn(nw, [
@@ -11,9 +10,8 @@ module.exports = function (url) {
     url
   ], {
     cwd: path.dirname(require.resolve('@deck/gui-app')),
-    env: process.env,
-    //stdio: 'inherit'
-  });
+    env: process.env
+  })
 
-  return stream;
-};
+  return stream
+}
