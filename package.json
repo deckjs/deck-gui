@@ -10,6 +10,10 @@
   "pre-commit": [
     "standard"
   ],
+  "files": [
+    "cmd.js",
+    "index.js"
+  ],
   "bin": {
     "gui": "./cmd.js"
   },
