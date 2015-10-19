@@ -5,10 +5,10 @@
   "nw": "0.12.1",
   "scripts": {
     "postinstall": "install-nw",
-    "standard": "standard --format"
+    "format": "standard --format"
   },
   "pre-commit": [
-    "standard"
+    "format"
   ],
   "files": [
     "cmd.js",
