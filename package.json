@@ -1,6 +1,6 @@
 {
   "name": "@deck/gui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "nw": "0.12.1",
   "scripts": {
