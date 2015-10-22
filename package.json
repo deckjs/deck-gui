@@ -5,7 +5,7 @@
   "nw": "0.12.1",
   "scripts": {
     "postinstall": "install-nw",
-    "format": "standard --format"
+    "format": "standard"
   },
   "pre-commit": [
     "format"
