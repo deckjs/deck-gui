@@ -1,3 +1,4 @@
+/* global shortcut */
 var app = require('app')
 var gs = require('global-shortcut')
 var shortcuts = [
@@ -10,18 +11,18 @@ var shortcuts = [
 ]
 
 module.exports = () => {
-  app.on('ready', () => shortcuts
-    .map(sc => ({
-      shortcut: sc,
-      success: gs.register(sc.shortcut, sc.handler)
-    }))
-    .forEach(result => {
-      if (!result.success) {
-        console.warn(result.shortcut + ' shortcut did not register')
-      }
-    })
+  app.on('ready', () =>
+    shortcuts
+      .map(sc => ({
+        shortcut: sc,
+        success: gs.register(sc.shortcut, sc.handler)
+      }))
+      .forEach(result => {
+        if (!result.success) {
+          console.warn(shortcut + ' shortcut did not register')
+        }
+      })
   )
-
   app.on('will-exit', gs.unregisterAll)
 }
 
