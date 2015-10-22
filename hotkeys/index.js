@@ -1,3 +1,4 @@
+/* global shortcut */
 var app = require('app')
 var gs = require('global-shortcut')
 var shortcuts = [
@@ -5,11 +6,10 @@ var shortcuts = [
   require('./cmd-e'),
   require('./ctrl-n'),
   require('./cmd-b'),
-  require('./ctrl-cmd-d'),
+  require('./ctrl-cmd-d')
 ]
 
 module.exports = () => {
-
   app.on('ready', () =>
     shortcuts
       .map(sc => ({
@@ -22,9 +22,7 @@ module.exports = () => {
         }
       })
   )
-
   app.on('will-exit', gs.unregisterAll)
-
 }
 
 module.exports.shortcuts = shortcuts
