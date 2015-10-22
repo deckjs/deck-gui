@@ -21,13 +21,13 @@ app.commandLine.appendSwitch('enable-usermedia-screen-capturing')
 
 app.on('ready', () => {
   app.ready = true
-  
+
   app.windows = scr().getAllDisplays().slice(0, 2)
     .map((display, ix) => {
       var win = new BrowserWindow(Object.assign({}, display.bounds, configs[ix]))
       return win
     })
-  
+
   app.windows.forEach(win => {
     win.loadUrl('file://' + __dirname + '/loading.html')
     win.on('close', process.exit)

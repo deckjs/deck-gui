@@ -5,10 +5,11 @@
   "nw": "0.12.1",
   "scripts": {
     "postinstall": "install-nw",
-    "format": "standard --format"
+    "format": "standard --format",
+    "lint": "standard"
   },
   "pre-commit": [
-    "format"
+    "lint"
   ],
   "files": [
     "cmd.js",
@@ -21,8 +22,10 @@
   "license": "MIT",
   "dependencies": {
     "@deck/gui-app": "^1.0.2",
+    "co": "^4.6.0",
     "editor": "^1.0.0",
-    "minimist": "^1.1.1"
+    "minimist": "^1.1.1",
+    "pdfkit": "^0.7.1"
   },
   "devDependencies": {
     "pre-commit": "^1.1.1",

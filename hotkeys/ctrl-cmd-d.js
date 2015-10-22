@@ -1,4 +1,3 @@
-var app = require('app')
 var BrowserWindow = require('browser-window')
 
 module.exports = {
@@ -9,7 +8,7 @@ module.exports = {
   `
 }
 
-function toggle() {
+function toggle () {
   (toggle.last = BrowserWindow.getFocusedWindow() || toggle.last)
-      .toggleDevTools()
+    .toggleDevTools()
 }
