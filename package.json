@@ -1,11 +1,10 @@
 {
   "name": "@deck/gui",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "main": "index.js",
   "nw": "0.12.1",
   "scripts": {
-    "postinstall": "install-nw",
-    "format": "standard --format",
+    "format": "standard --lint",
     "lint": "standard"
   },
   "pre-commit": [
@@ -21,7 +20,6 @@
   "author": "David Mark Clements",
   "license": "MIT",
   "dependencies": {
-    "@deck/gui-app": "^1.0.2",
     "co": "^4.6.0",
     "editor": "^1.0.0",
     "minimist": "^1.1.1",
