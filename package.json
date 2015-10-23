@@ -11,8 +11,11 @@
     "lint"
   ],
   "files": [
+    "hotkeys",
+    "lib",
     "cmd.js",
-    "index.js"
+    "index.js",
+    "loading.html"
   ],
   "bin": {
     "gui": "./cmd.js"
