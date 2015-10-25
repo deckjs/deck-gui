@@ -5,7 +5,7 @@ var shortcuts = [
   require('./ctrl-cmd-h'),
   require('./cmd-e'),
   require('./ctrl-n'),
-  require('./cmd-b'),
+  require('./ctrl-cmd-b'),
   require('./ctrl-cmd-d'),
   require('./ctrl-cmd-p')
 ]
