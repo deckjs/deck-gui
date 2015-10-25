@@ -19,7 +19,7 @@
         <td style="font-style: italic">open notes viewer window</td>
       </tr>
       <tr>
-        <td>cmd + b</td>
+        <td>ctrl + cmd + b</td>
         <td style="font-style: italic">broadcast screen into presentation</td>
       </tr>
       <tr>
