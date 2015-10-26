@@ -16,7 +16,8 @@
     "cmd.js",
     "index.js",
     "loading.html",
-    "deck.png"
+    "deck.png",
+    "deck-invert.png"
   ],
   "bin": {
     "gui": "./cmd.js"
