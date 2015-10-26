@@ -15,7 +15,8 @@
     "lib",
     "cmd.js",
     "index.js",
-    "loading.html"
+    "loading.html",
+    "deck.png"
   ],
   "bin": {
     "gui": "./cmd.js"
