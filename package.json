@@ -33,5 +33,14 @@
   "devDependencies": {
     "pre-commit": "^1.1.1",
     "standard": "^5.3.1"
-  }
+  },
+  "description": "the GUI for @deck/app",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nearform/deck-gui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nearform/deck-gui/issues"
+  },
+  "homepage": "https://github.com/nearform/deck-gui#readme"
 }
