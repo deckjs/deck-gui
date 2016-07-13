@@ -28,7 +28,8 @@
     "co": "^4.6.0",
     "editor": "^1.0.0",
     "minimist": "^1.1.1",
-    "pdfkit": "^0.7.1"
+    "pdfkit": "^0.7.1",
+    "officegen": "0.2.9"
   },
   "devDependencies": {
     "pre-commit": "^1.1.1",

@@ -7,7 +7,8 @@ var shortcuts = [
   require('./ctrl-n'),
   require('./ctrl-cmd-b'),
   require('./ctrl-cmd-d'),
-  require('./ctrl-cmd-p')
+  require('./ctrl-cmd-p'),
+  require('./ctrl-cmd-o')
 ]
 
 module.exports = () => {
