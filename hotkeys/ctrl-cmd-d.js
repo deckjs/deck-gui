@@ -1,4 +1,4 @@
-var BrowserWindow = require('browser-window')
+const {BrowserWindow} = require('electron')
 
 module.exports = {
   shortcut: 'ctrl + cmd + d',

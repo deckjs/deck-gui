@@ -1,6 +1,5 @@
 /* global shortcut */
-var app = require('app')
-var gs = require('global-shortcut')
+const {app, globalShortcut} = require('electron')
 var shortcuts = [
   require('./ctrl-cmd-h'),
   require('./cmd-e'),
@@ -15,7 +14,7 @@ module.exports = () => {
     shortcuts
       .map(sc => ({
         shortcut: sc,
-        success: gs.register(sc.shortcut, sc.handler)
+        success: globalShortcut.register(sc.shortcut, sc.handler)
       }))
       .forEach(result => {
         if (!result.success) {
@@ -23,7 +22,7 @@ module.exports = () => {
         }
       })
   )
-  app.on('will-exit', gs.unregisterAll)
+  app.on('will-exit', globalShortcut.unregisterAll)
 }
 
 module.exports.shortcuts = shortcuts

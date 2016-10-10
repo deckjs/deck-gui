@@ -1,4 +1,4 @@
-var app = require('app')
+const {app} = require('electron')
 var fs = require('fs')
 var pdf = require('../lib/pdf')
 
