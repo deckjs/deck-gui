@@ -18,7 +18,7 @@ module.exports = () => {
       }))
       .forEach(result => {
         if (!result.success) {
-          console.warn(shortcut + ' shortcut did not register')
+          console.warn(result.shortcut + ' shortcut did not register')
         }
       })
   )
