@@ -5,7 +5,8 @@ module.exports = {
   handler: toggle,
   description: `
     toggle devtools for a focused window
-  `
+  `,
+  label: 'Toogle devtools'
 }
 
 function toggle () {

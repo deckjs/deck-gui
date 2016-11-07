@@ -5,5 +5,6 @@ module.exports = {
   handler: help,
   description: `
     opens help window
-  `
+  `,
+  label: 'Open Help'
 }

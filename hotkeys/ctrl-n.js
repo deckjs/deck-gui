@@ -5,5 +5,6 @@ module.exports = {
   handler: notes,
   description: `
     open notes viewer window
-  `
+  `,
+  label: 'Toggle Notes'
 }
