@@ -28,15 +28,13 @@ var shortcuts = [
   require('./hotkeys/ctrl-cmd-p')
 ]
 
-const actionsSubmenu = shortcuts.map(short => ({
-  label: short.label,
-  accelerator: short.shortcut,
-  click: short.handler
-}))
-
 const actions = {
   label: 'Actions',
-  submenu: actionsSubmenu
+  submenu: shortcuts.map(short => ({
+    label: short.label,
+    accelerator: short.shortcut,
+    click: short.handler
+  }))
 }
 
 app.on('ready', () => {
