@@ -5,5 +5,6 @@ module.exports = {
   handler: edit,
   description: `
     open deck.md file in default editor
-  `
+  `,
+  label: 'Open in Editor'
 }

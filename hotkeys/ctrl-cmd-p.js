@@ -11,5 +11,6 @@ module.exports = {
   },
   description: `
     create a pdf file from presentation
-  `
+  `,
+  label: 'Create PDF'
 }

@@ -5,5 +5,6 @@ module.exports = {
   handler: broadcast,
   description: `
     broadcast screen into presentation
-  `
+  `,
+  label: 'Broadcast screen'
 }

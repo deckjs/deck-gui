@@ -2,6 +2,7 @@
 
 const electron = require('electron')
 const { BrowserWindow, app } = electron
+
 require('./hotkeys')()
 var configs = [
   {
@@ -18,8 +19,31 @@ var configs = [
 
 app.commandLine.appendSwitch('enable-usermedia-screen-capturing')
 
+var shortcuts = [
+  require('./hotkeys/ctrl-cmd-h'),
+  require('./hotkeys/cmd-e'),
+  require('./hotkeys/ctrl-n'),
+  require('./hotkeys/ctrl-cmd-b'),
+  require('./hotkeys/ctrl-cmd-d'),
+  require('./hotkeys/ctrl-cmd-p')
+]
+
+const actions = {
+  label: 'Actions',
+  submenu: shortcuts.map(short => ({
+    label: short.label,
+    accelerator: short.shortcut,
+    click: short.handler
+  }))
+}
+
 app.on('ready', () => {
   app.ready = true
+
+  const {Menu, MenuItem} = electron
+  const menu = Menu.getApplicationMenu()
+  const actionsMenu = new MenuItem(actions)
+  menu.insert(menu.items.length - 1, actionsMenu)
 
   app.windows = electron.screen.getAllDisplays().slice(0, 2)
     .map((display, ix) => {
